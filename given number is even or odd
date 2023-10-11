@@ -1,0 +1,14 @@
+n=int(input())
+if(n%2==0):
+    print("number is even")
+else:
+        print("number is odd")
+
+
+
+output------
+3
+number is odd
+
+2
+number is even
