@@ -1,0 +1,28 @@
+from tkinter import*
+notepad=Tk()
+menu=Menu(notepad)
+notepad.config(menu=menu)
+filemenu=Menu(menu)
+menu.add_cascade(label='File',menu=filemenu)
+editmenu=Menu(menu)
+menu.add_cascade(label='Edit',menu=editmenu)
+formatmenu=Menu(menu)
+menu.add_cascade(label='Format',menu=formatmenu)
+exitmenu=Menu(menu)
+menu.add_cascade(label='Exit',menu=exitmenu)
+filemenu.add_command(label='New')
+filemenu.add_command(label='open')
+filemenu.add_command(label='save')
+filemenu.add_command(label='save as...')
+
+editmenu.add_command(label='cut')
+editmenu.add_command(label='copy')
+editmenu.add_command(label='paste')
+
+formatmenu.add_command(label='run')
+formatmenu.add_command(label='front')
+formatmenu.add_command(label='wordwrap')
+mainloop()
+
+
+
